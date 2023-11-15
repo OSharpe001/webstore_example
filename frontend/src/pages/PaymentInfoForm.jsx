@@ -1,7 +1,7 @@
 
 
 export default function PaymentInfoForm() {
-  return (
-    <div>PaymentInfoForm</div>
-  );
+  return <div>
+    Payment Info Form
+  </div>
 }

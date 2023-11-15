@@ -1,7 +1,7 @@
 
 
 export default function DetailedDescriptions() {
-  return (
-    <div>DetailedDescriptions</div>
-  );
+  return <div>
+    Detailed Descriptions
+  </div>
 }
