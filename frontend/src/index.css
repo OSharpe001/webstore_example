@@ -1,9 +1,73 @@
+/* background-color: rgb(255, 98, 0); /* ORANGE */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16pt;
 }
 
-/* html{
-  border: 2px solid red;
-} */
+/* GENERAL STYLES */
+.button {
+  padding: 2px 7px;
+  color:black;
+  background-color: aliceblue;
+  border-radius: 16px;
+  border: 2px solid black;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, .7);
+}
+
+/* HEADER STYLES */
+header {
+  padding: 0 20px;
+  color: aliceblue;
+  background-color: rgb(127, 127, 246);
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 7vh;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+}
+.banner-title {
+  margin-left: 10px;
+  align-self: center;
+}
+.mascot {
+  width: 50px;
+}
+.nav-items {}
+
+/* HOME PAGE STYLES */
+
+/* LOGIN PAGE STYLES */
+
+/* REGISTER PAGE STYLES */
+
+/* ABOUT PAGE STYLES */
+
+/* PAYMENT FORM STYLES */
+
+/* REQUEST FORM STYLES */
+
+/* DESCRIPTION STYLES */
+
+/* FOOTER STYLES */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 7vh;
+  color: aliceblue;
+  background-color: rgb(190, 102, 190);
+}
+
+/* MOBILE STYLES */
