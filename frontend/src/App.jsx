@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useState } from "react"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -16,6 +16,8 @@ export default function App() {
 
   const [loggedIn, setLoggedIn] = useState(false);
 
+  const currentScreen = useLocation().pathname;
+
   return <>
       <Header />
       <Routes>
@@ -27,8 +29,14 @@ export default function App() {
         <Route path="/request" element={<RequestForm />} />
         <Route path="/pay-info" element={<PaymentInfoForm />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/sign-in" element={<Login />} />
-        <Route path="/sign-up" element={<Register />} />
+        <Route path="/sign-in" element={<Login
+                                          setLoggedIn={setLoggedIn}
+                                          currentScreen={currentScreen}
+                                        />} />
+        <Route path="/sign-up" element={<Register
+                                          setLoggedIn={setLoggedIn}
+                                          currentScreen={currentScreen}
+                                        />} />
       </Routes>
       <Footer />
     </>
