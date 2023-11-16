@@ -1,27 +1,111 @@
-/* background-color: rgb(255, 98, 0); /* ORANGE */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16pt;
+  --primaryColor: rgb(127, 127, 246);
+  --secondaryColor: rgb(190, 102, 190);
+  --tertiaryColor: rgb(255, 98, 0);
+  --letterColor: rgb(42, 67, 101);
+  --backgroundColor: aliceblue;
 }
 
 /* GENERAL STYLES */
 .button {
   padding: 2px 7px;
-  color:black;
-  background-color: aliceblue;
+  font-size: 14pt;
+  width: max-content;
+  color: black;
+  background-color: var(--backgroundColor);
   border-radius: 16px;
   border: 2px solid black;
-  box-shadow: -2px 2px 10px rgba(0, 0, 0, .7);
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, .7);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+  border: 1px ridge red;
+}
+
+button:hover, .button:hover {
+  text-decoration: underline;
+}
+
+button:active, .button:active {
+  box-shadow: -1px 1px 3px var(--backgroundColor);
+}
+
+.welcome {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 0 10px;
+  font-size: 28pt;
+}
+
+.direct {
+  text-align: center;
+  padding: 20px 0;
+  margin: 10px 0;
+  font-size: 20pt;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+a {
+  font-size: 20pt;
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+  font-size: 16pt;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  font-size: 14pt;
+  width: 33ch;
+  margin: 0 auto 2px;
+  line-height: 1.5;
+  box-shadow: 1px 1px 7px var(--backgroundColor);
+  border: var(--secondaryColor);
+  border-radius: 0 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 16pt;
+  height: 2.3ch;
+  text-shadow: 1px 1px 1px var(--backgroundColor);
+  margin: 4px auto 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.heart {
+  width: 23px;
 }
 
 /* HEADER STYLES */
 header {
   padding: 0 20px;
-  color: aliceblue;
-  background-color: rgb(127, 127, 246);
+  color: var(--letterColor);
+  background-color: var(--primaryColor);
 }
 
 header nav {
@@ -49,12 +133,12 @@ header nav {
 }
 
 .banner:hover {
-  box-shadow: -2px 2px 5px aliceblue;
+  box-shadow: -2px 2px 5px var(--backgroundColor);
   text-decoration: underline;
 }
 
 .banner:active {
-  box-shadow: -1px 1px 3px aliceblue;
+  box-shadow: -1px 1px 3px var(--backgroundColor);
 }
 
 .nav-items {
@@ -124,9 +208,49 @@ header nav {
 
 /* HOME PAGE STYLES */
 
-/* LOGIN PAGE STYLES */
-
 /* REGISTER PAGE STYLES */
+.register-page {
+  min-height: 88vh;
+  color: var(--letterColor);
+  background-color: var(--backgroundColor);
+  padding: 0 30px;
+}
+
+.register-page form {
+  margin: auto;
+  padding: 20px 80px;
+  text-align: center;
+  width: max-content;
+  border-radius: 7px;
+  border: 2px solid var(--secondaryColor);
+  box-shadow: -2px 2px 5px var(--backgroundColor);
+}
+/* 
+.register-page button {
+  margin-bottom: 20px;
+} */
+
+/* LOGIN PAGE STYLES */
+.login-page {
+  min-height: 88vh;
+  color: var(--letterColor);
+  background-color: var(--backgroundColor);
+  padding: 0 30px;
+}
+
+.login-page form {
+  margin: auto;
+  padding: 20px 80px  0 80px;
+  text-align: center;
+  width: max-content;
+  border-radius: 7px;
+  border: 2px solid var(--secondaryColor);
+  box-shadow: -2px 2px 5px var(--backgroundColor);
+}
+
+.login-page button {
+  margin-bottom: 20px;
+}
 
 /* ABOUT PAGE STYLES */
 
@@ -143,8 +267,8 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   min-height: 7vh;
-  color: aliceblue;
-  background-color: rgb(190, 102, 190);
+  color: var(--backgroundColor);
+  background-color: var(--secondaryColor);
 }
 
 /* MOBILE STYLES */
