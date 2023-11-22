@@ -1,15 +1,16 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useState } from "react"
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { Header, Footer } from "./components";
 import {
   DetailedDescriptions,
   Home,
   Login,
-  PaymentInfoForm,
+  OrderForm,
   Register,
   RequestForm,
-  AboutUs
+  AboutUs,
+  Cart,
+  OrderConfirmation
 } from "./pages";
 
 export default function App() {
@@ -27,7 +28,9 @@ export default function App() {
                                   />} />
         <Route path="/description" element={<DetailedDescriptions />} />
         <Route path="/request" element={<RequestForm />} />
-        <Route path="/pay-info" element={<PaymentInfoForm />} />
+        <Route path="/order-form" element={<OrderForm />} />
+        <Route path="/order-confirmation" element={<OrderConfirmation />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/sign-in" element={<Login
                                           setLoggedIn={setLoggedIn}
