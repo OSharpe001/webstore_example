@@ -209,8 +209,9 @@ header nav {
 /* HOME PAGE STYLES */
 .home-page {
   min-height: 81vh;
+  text-align: center;
 }
-
+/* --HERO STYLES-- */
 .hero-section {
   margin: 50px auto;
   display: flex;
@@ -225,6 +226,11 @@ header nav {
 .hero-section p {
   width: 300px;
 }
+.ceo-pic {
+  width: 400px;
+}
+
+
 .merch-item {
   width: 300px;
 }
