@@ -6,6 +6,9 @@ import girl1 from "../assets/images/items/girl1.jpg";
 import hats1 from "../assets/images/items/hats1.jpg";
 import mermaids1 from "../assets/images/items/mermaids1.jpg";
 import plumber from "../assets/images/items/plumber.jpg";
+import fishking from "../assets/images/items/fishking.jpg";
+import slippers1 from "../assets/images/items/slippers1.jpg";
+import slippers2 from "../assets/images/items/slippers2.jpg";
 
 const merchItems = [
     {
@@ -47,6 +50,21 @@ const merchItems = [
         picNumber: 7,
         photo: mermaids1,
         alt: "knitted mermaid"
+    },
+    {
+        picNumber: 8,
+        photo: fishking,
+        alt: "knitted red fish with crown"
+    },
+    {
+        picNumber: 9,
+        photo: slippers1,
+        alt: "knitted slippers"
+    },
+    {
+        picNumber: 10,
+        photo: slippers2,
+        alt: "knitted slippers"
     },
 ];
 
