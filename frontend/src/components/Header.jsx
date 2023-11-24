@@ -57,6 +57,7 @@ export default function Header({ loggedIn, setLoggedIn }) {
         <p className="banner-title">Web Store Example</p>
       </div>
       <div className="nav-items">
+      <Link aria-label="On Click" to="/about-us" className="button">About Us</Link>
         {
           currentScreen === "/blog" &&
           <Link aria-label="On Click" to="" onClick={backHome} className="button">Blogs</Link>
