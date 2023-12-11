@@ -29,5 +29,6 @@ export default function Home() {
     </div>
     <h1 className="direct"><span className="underlined">Or</span> make a <Link aria-label="On Click" to="/request">Request</Link></h1>
     <button className="button" onClick={()=>navigate("/request")}>Special Request</button>
+    <h4 className="red">If you want a plushie of a specific character, please include a screenshot (to reduce confusion)</h4>
   </main>
 }
